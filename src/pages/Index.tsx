@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { FileCheck, Shield, FileText, Lock } from 'lucide-react';
+import { FileCheck, Shield, FileText, Lock, Check } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 

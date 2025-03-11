@@ -79,12 +79,8 @@ const VerificationResult = () => {
                 <span className="font-medium">{document.confidenceScore}%</span>
               </div>
               <Progress 
-                className="h-2" 
+                className={`h-2 ${document.status === 'authentic' ? 'bg-doc-green' : 'bg-doc-red'}`} 
                 value={document.confidenceScore} 
-                // Change color based on document status
-                indicatorClassName={
-                  document.status === 'authentic' ? 'bg-doc-green' : 'bg-doc-red'
-                }
               />
             </div>
           )}
